@@ -1,4 +1,3 @@
-
 import Logo from './logo.png';
 
 export default function HomePage() {
