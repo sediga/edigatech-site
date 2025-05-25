@@ -1,3 +1,4 @@
+
 export default function HomePage() {
   return (
     <main className="p-6 max-w-6xl mx-auto bg-gradient-to-br from-white via-blue-50 to-purple-100 min-h-screen">
