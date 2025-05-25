@@ -9,7 +9,6 @@ export default function HomePage() {
         <h1 className="text-5xl font-extrabold mb-4 text-indigo-800">Ediga Technology Solutions</h1>
         <p className="text-xl text-gray-700">Empowering Developers Through Coaching, Interviews & Job Placement</p>
       </section>
-
       <section className="py-10">
         <h2 className="text-3xl font-semibold mb-6 text-purple-700">🚀 Our Core Services</h2>
         <ul className="grid md:grid-cols-2 gap-6">
@@ -35,7 +34,6 @@ export default function HomePage() {
           </li>
         </ul>
       </section>
-
       <section className="py-12">
         <h2 className="text-3xl font-semibold mb-8 text-indigo-800">📌 Ready to Take the Next Step?</h2>
         <div className="grid md:grid-cols-3 gap-6">
@@ -56,7 +54,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       <footer className="text-center py-6 text-sm text-gray-600">
         &copy; {new Date().getFullYear()} Ediga Technology Solutions LLC. All rights reserved.
       </footer>
