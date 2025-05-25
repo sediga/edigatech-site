@@ -37,7 +37,7 @@ export default function HomePage() {
       </section>
 
       <section className="py-12">
-        <h2 className="text-3xl font-semibold mb-8 text-indigo-800">📌 Ready to Take the Next Step?</h2>
+        <h2 className="text-3xl font-semibold mb-8 text-indigo-800">Ready to Take the Next Step?</h2>
         <div className="grid md:grid-cols-3 gap-6">
           <div className="bg-indigo-50 rounded-2xl p-6 shadow-md border border-indigo-200">
             <h3 className="font-bold text-lg mb-2 text-indigo-900">📅 Book a Discovery Call</h3>
@@ -45,7 +45,7 @@ export default function HomePage() {
             <a href="https://calendly.com/your-calendly-link" className="inline-block mt-4 text-indigo-700 underline font-medium">Schedule Now</a>
           </div>
           <div className="bg-blue-50 rounded-2xl p-6 shadow-md border border-blue-200">
-            <h3 className="font-bold text-lg mb-2 text-blue-900">📤 Upload Your Resume</h3>
+            <h3 className="font-bold text-lg mb-2 text-blue-900">Upload Your Resume</h3>
             <p className="text-gray-700">We'll assess your profile and provide training or job matching recommendations.</p>
             <a href="https://forms.gle/your-google-form-link" className="inline-block mt-4 text-blue-700 underline font-medium">Upload Resume</a>
           </div>
