@@ -1,7 +1,7 @@
-
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
+  "defaultProject": "edigatech",
   "projects": {
     "edigatech": {
       "projectType": "application",
@@ -20,16 +20,34 @@
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": ["src/styles.scss"],
             "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            }
           }
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
             "browserTarget": "edigatech:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "edigatech:build:production"
+            }
           }
         }
       }
     }
-  },
-  "defaultProject": "edigatech"
+  }
 }
