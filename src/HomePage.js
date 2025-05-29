@@ -40,12 +40,9 @@ export default function HomePage() {
             <h3 className="font-bold text-lg mb-2 text-indigo-900">📅 Book a Discovery Call</h3>
             <p className="text-gray-700">Let’s understand your background and career goals. We'll guide you from there.</p>
             <div className="mt-4">
-              <iframe 
-                src="https://calendly.com/your-calendly-link" 
-                width="100%" 
-                height="400" 
-                frameBorder="0">
-              </iframe>
+            <a href="https://calendly.com/your-username" target="_blank" rel="noopener noreferrer">
+              <button>Book a Discovery Call</button>
+            </a>
             </div>
           </div>
           <div className="bg-blue-50 rounded-2xl p-6 shadow-md border border-blue-200">
