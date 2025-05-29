@@ -1,5 +1,5 @@
 import Logo from './logo.png';
-import CalendlyButton from '../components/CalendlyButton'; // Add this at top if not already
+import CalendlyButton from './components/CalendlyButton'; // Add this at top if not already
 
 export default function HomePage() {
   return (
