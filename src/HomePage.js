@@ -1,4 +1,5 @@
 import Logo from './logo.png';
+import CalendlyButton from '../components/CalendlyButton'; // Add this at top if not already
 
 export default function HomePage() {
   return (
@@ -34,15 +35,13 @@ export default function HomePage() {
         </ul>
       </section>
       <section className="py-12">
-        <h2 className="text-3xl font-semibold mb-8 text-indigo-800">📌 Ready to Take the Next Step?</h2>
+        <h2 className="text-3xl font-semibold mb-8 text-indigo-800">Ready to Take the Next Step?</h2>
         <div className="grid md:grid-cols-3 gap-6">
           <div className="bg-indigo-50 rounded-2xl p-6 shadow-md border border-indigo-200">
             <h3 className="font-bold text-lg mb-2 text-indigo-900">📅 Book a Discovery Call</h3>
             <p className="text-gray-700">Let’s understand your background and career goals. We'll guide you from there.</p>
             <div className="mt-4">
-            <a href="#" onclick="Calendly.initPopupWidget({ url: 'https://calendly.com/sreenivasa-edigatech/30min' }); return false;">
-              Book a Discovery Call
-            </a>
+              <CalendlyButton />
             </div>
           </div>
           <div className="bg-blue-50 rounded-2xl p-6 shadow-md border border-blue-200">
