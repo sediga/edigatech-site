@@ -15,7 +15,7 @@ const CalendlyButton = () => {
     e.preventDefault();
     if (window.Calendly) {
       window.Calendly.initPopupWidget({
-        url: 'hhttps://calendly.com/sreenivasa-edigatech/30min'
+        url: 'https://calendly.com/sreenivasa-edigatech/30min'
       });
     }
   };
