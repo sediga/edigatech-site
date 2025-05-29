@@ -1,11 +1,13 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 
 const CalendlyButton = () => {
   useEffect(() => {
     const script = document.createElement('script');
     script.src = 'https://assets.calendly.com/assets/external/widget.js';
     script.async = true;
+    script.type = 'text/javascript';
     document.head.appendChild(script);
+
     return () => {
       document.head.removeChild(script);
     };
@@ -17,6 +19,8 @@ const CalendlyButton = () => {
       window.Calendly.initPopupWidget({
         url: 'https://calendly.com/sreenivasa-edigatech/30min'
       });
+    } else {
+      console.warn('Calendly not loaded yet');
     }
   };
 
