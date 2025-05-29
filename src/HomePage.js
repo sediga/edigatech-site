@@ -40,8 +40,8 @@ export default function HomePage() {
             <h3 className="font-bold text-lg mb-2 text-indigo-900">📅 Book a Discovery Call</h3>
             <p className="text-gray-700">Let’s understand your background and career goals. We'll guide you from there.</p>
             <div className="mt-4">
-            <a href="https://calendly.com/your-username" target="_blank" rel="noopener noreferrer">
-              <button>Book a Discovery Call</button>
+            <a href="#" onclick="Calendly.initPopupWidget({ url: 'https://calendly.com/sreenivasa-edigatech/30min' }); return false;">
+              Book a Discovery Call
             </a>
             </div>
           </div>
