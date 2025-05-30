@@ -1,5 +1,5 @@
 import Logo from './logo.png';
-import CalendlyButton from './components/CalendlyButton'; // Add this at top if not already
+import CalendlyButton from './components/CalendlyButton';
 
 export default function HomePage() {
   return (
@@ -40,9 +40,7 @@ export default function HomePage() {
           <div className="bg-indigo-50 rounded-2xl p-6 shadow-md border border-indigo-200">
             <h3 className="font-bold text-lg mb-2 text-indigo-900">📅 Book a Discovery Call</h3>
             <p className="text-gray-700">Let’s understand your background and career goals. We'll guide you from there.</p>
-            <div className="mt-4">
-              <CalendlyButton />
-            </div>
+               <CalendlyButton />
           </div>
           <div className="bg-blue-50 rounded-2xl p-6 shadow-md border border-blue-200">
             <h3 className="font-bold text-lg mb-2 text-blue-900">📤 Upload Your Resume</h3>
