@@ -1,5 +1,6 @@
 import Logo from './logo.png';
 import CalendlyButton from './components/CalendlyButton';
+import ContactForm from './components/ContactForm';
 
 export default function HomePage() {
   return (
@@ -45,12 +46,20 @@ export default function HomePage() {
           <div className="bg-blue-50 rounded-2xl p-6 shadow-md border border-blue-200">
             <h3 className="font-bold text-lg mb-2 text-blue-900">📤 Upload Your Resume</h3>
             <p className="text-gray-700">We'll assess your profile and provide training or job matching recommendations.</p>
-            <a href="https://forms.gle/your-google-form-link" className="inline-block mt-4 text-blue-700 underline font-medium">Upload Resume</a>
-          </div>
+            <a  href="https://docs.google.com/forms/d/e/1FAIpQLSdpEOIy3z5D3-JGl2fBDpSG4OF97yk_fWvYs2uw5V1Yt168iw/viewform?usp=dialog"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+            >
+              Upload Your Resume
+            </a>
+            </div>
           <div className="bg-purple-50 rounded-2xl p-6 shadow-md border border-purple-200">
             <h3 className="font-bold text-lg mb-2 text-purple-900">📩 Contact Us</h3>
             <p className="text-gray-700">Got questions? Reach out via email or connect with us on LinkedIn.</p>
-            <a href="mailto:contact@edigatech.com" className="inline-block mt-4 text-purple-700 underline font-medium">Email Us</a>
+            <div className="bg-purple-50 rounded-2xl p-6 shadow-md border border-purple-200">
+              <ContactForm />
+            </div>
           </div>
         </div>
       </section>
