@@ -46,14 +46,18 @@ export default function HomePage() {
           <div className="bg-blue-50 rounded-2xl p-6 shadow-md border border-blue-200">
             <h3 className="font-bold text-lg mb-2 text-blue-900">📤 Upload Your Resume</h3>
             <p className="text-gray-700">We'll assess your profile and provide training or job matching recommendations.</p>
-            <a  href="https://docs.google.com/forms/d/e/1FAIpQLSdpEOIy3z5D3-JGl2fBDpSG4OF97yk_fWvYs2uw5V1Yt168iw/viewform?usp=dialog"
+            <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdpEOIy3z5D3-JGl2fBDpSG4OF97yk_fWvYs2uw5V1Yt168iw/viewform?usp=dialog"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
-            >
-              Upload Your Resume
-            </a>
-            </div>
+                className="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+              >
+                Upload Your Resume
+              </a>
+              <p className="text-sm text-gray-600 mt-2">
+                The form opens in a new tab. Once submitted, return here to continue.
+              </p>
+             </div>
           <div className="bg-purple-50 rounded-2xl p-6 shadow-md border border-purple-200">
             <h3 className="font-bold text-lg mb-2 text-purple-900">📩 Contact Us</h3>
             <p className="text-gray-700">Got questions? Reach out via email or connect with us on LinkedIn.</p>
