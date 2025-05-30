@@ -18,7 +18,8 @@ export default function HomePage() {
             <li><a href="#book" className="hover:text-indigo-600">Book Call</a></li>
             <li><a href="#resume" className="hover:text-indigo-600">Upload Resume</a></li>
             <li><a href="#contact" className="hover:text-indigo-600">Contact</a></li>
-          </ul>
+            <li><a href="/recruiters" className="hover:text-green-600">For Recruiters</a></li>
+        </ul>
         </nav>
       </header>
 
@@ -26,9 +27,9 @@ export default function HomePage() {
       <section id="mission" className="bg-indigo-50 py-10 text-center px-6">
         <h1 className="text-4xl font-extrabold text-indigo-800 mb-4">Mission Statement</h1>
         <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-          At Ediga Technology Solutions, our mission is to empower individuals to land meaningful tech careers. 
-          We focus on results — offering coaching, interview prep, and job placement with no upfront cost. 
-          We only win when you win. Whether you're a fresh graduate or switching fields, we're here to guide 
+          At Ediga Technology Solutions, our mission is to empower individuals to land meaningful tech careers.
+          We focus on results — offering coaching, interview prep, and job placement with no upfront cost.
+          We only win when you win. Whether you're a fresh graduate or switching fields, we're here to guide
           you with heart and hustle.
         </p>
       </section>
@@ -85,15 +86,10 @@ export default function HomePage() {
         <section id="coaching" className="py-12 scroll-mt-20">
           <h2 className="text-2xl font-bold mb-4 text-blue-700">Developer Coaching</h2>
           <p className="text-gray-700 mb-6">
-            Our coaching program targets developers at all levels — from junior to senior. With 24+ years of real-world experience in software development, we bring you training in full-stack .NET development, API integration, modern DevOps, and cloud-native design. Sessions are practical and tech-driven, covering:
+            Our coaching program targets developers at all levels. You'll gain hands-on experience in modern .NET development using C# and .NET Core 8, dive into SOLID principles, microservices, and event-driven systems, and learn scalable API design with OAuth and JWT. We also cover AWS and Azure cloud patterns, Docker, CI/CD with Azure DevOps, and legacy modernization strategies.
+            <br /><br />
+            Sessions are led by industry veterans with over 20 years of experience in healthcare, finance, and cloud domains. It’s not just training — it’s mentorship designed to build confidence and bridge the gap between theory and professional practice.
           </p>
-          <ul className="list-disc list-inside text-gray-700 mb-6 space-y-2">
-            <li>.NET Core 8 and C# architecture best practices</li>
-            <li>RESTful API design and security (OAuth2, JWT)</li>
-            <li>Azure and AWS fundamentals including IAM, Lambda, ECS, S3, Azure Functions</li>
-            <li>Legacy modernization and domain-driven design (DDD)</li>
-            <li>Microservices with containerization and CI/CD workflows</li>
-          </ul>
           <a href="#services" className="text-blue-600 underline">← Back to Services</a>
         </section>
 
@@ -101,9 +97,9 @@ export default function HomePage() {
         <section id="interviews" className="py-12 scroll-mt-20">
           <h2 className="text-2xl font-bold mb-4 text-indigo-700">Mock Interviews</h2>
           <p className="text-gray-700 mb-6">
-            We conduct realistic mock interviews based on job descriptions from real openings. Whether it’s system design, cloud architecture, or .NET coding, we simulate the actual pressure and format.
+            Our mock interviews simulate real-world scenarios — both technical and behavioral. We use actual job descriptions from top companies to tailor each session. You’ll get scored feedback on problem-solving, architecture thinking, communication, and technical depth.
             <br /><br />
-            You'll receive a detailed feedback scorecard and actionable tips to improve. We also offer 1:1 practice sessions for actual upcoming interviews to boost confidence and performance.
+            Have a real interview coming up? We’ll rehearse it with you. We’ve helped candidates walk into interviews with confidence and clarity — whether it’s system design, cloud architecture, or coding rounds.
           </p>
           <a href="#services" className="text-indigo-600 underline">← Back to Services</a>
         </section>
@@ -112,8 +108,9 @@ export default function HomePage() {
         <section id="resume-help" className="py-12 scroll-mt-20">
           <h2 className="text-2xl font-bold mb-4 text-purple-700">Resume & LinkedIn Help</h2>
           <p className="text-gray-700 mb-6">
-            We optimize your resume to align with modern ATS systems, focusing on clarity, keywords, and relevance. We also refine your LinkedIn profile to boost visibility and credibility with recruiters. 
-            This service includes 1:1 review and strategic advice tailored to your background.
+            We offer personalized resume reviews, keyword optimization, and guidance to align your LinkedIn profile with your career goals. Stand out in ATS filters and improve your response rate from recruiters.
+            <br /><br />
+            Our approach emphasizes relevance, clarity, and value — so that your resume opens doors, not closes them.
           </p>
           <a href="#services" className="text-purple-600 underline">← Back to Services</a>
         </section>
@@ -122,9 +119,9 @@ export default function HomePage() {
         <section id="placement" className="py-12 scroll-mt-20">
           <h2 className="text-2xl font-bold mb-4 text-pink-700">Job Placement</h2>
           <p className="text-gray-700 mb-6">
-            We connect you with hiring partners and opportunities through our network. There are no upfront fees. You only pay after you land a job.
+            We connect developers with companies looking for skilled talent. Our network and partnerships help match the right people with the right opportunities. Whether full-time or contract, we help you land the job that fits.
             <br /><br />
-            🎓 <strong>For freshers and students:</strong> We offer a fair screening process. Once accepted, we’ll coach and promote you to recruiters until you’re placed.
+            🎓 <strong>For students and freshers:</strong> There’s no upfront fee. We assess your potential and admit you through a fair screening process. Once accepted, we coach and promote you until placement. You pay only when you're hired — a win-win.
           </p>
           <a href="#services" className="text-pink-600 underline">← Back to Services</a>
         </section>
@@ -143,7 +140,7 @@ export default function HomePage() {
           <h2 className="text-3xl font-semibold mb-8 text-blue-800">Upload Your Resume</h2>
           <div className="bg-blue-50 rounded-2xl p-6 shadow-md border border-blue-200">
             <p className="text-gray-700 mb-4">
-              We’ll review your resume and reach out for screening. If accepted, we’ll match you with coaching or job opportunities based on your profile.
+              We’ll review your profile and invite you for a free screening call. Based on your goals, we’ll place you into our mentoring track or connect you with jobs. No upfront fees — you pay only when you're successfully placed.
             </p>
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSdpEOIy3z5D3-JGl2fBDpSG4OF97yk_fWvYs2uw5V1Yt168iw/viewform?usp=dialog"
@@ -153,11 +150,11 @@ export default function HomePage() {
             >
               Upload Resume
             </a>
-            <p className="text-sm text-gray-600 mt-2">This form opens in a new tab. Come back after you submit.</p>
+            <p className="text-sm text-gray-600 mt-2">The form opens in a new tab. Once submitted, return here to continue.</p>
           </div>
         </section>
 
-        {/* Contact Form */}
+        {/* Contact */}
         <section id="contact" className="py-12 scroll-mt-20">
           <h2 className="text-3xl font-semibold mb-8 text-purple-800">Contact Us</h2>
           <div className="bg-purple-50 rounded-2xl p-6 shadow-md border border-purple-200">
