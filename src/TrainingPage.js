@@ -2,7 +2,7 @@ import Logo from './logo.png';
 import CalendlyButton from './components/CalendlyButton';
 import ContactForm from './components/ContactForm';
 
-export default function HomePage() {
+export default function TrainingPage() {
   return (
     <>
       {/* Navigation */}
