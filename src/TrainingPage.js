@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 export default function TrainingPage() {
   return (
     <>
+    <div className="min-h-screen bg-gradient-to-br from-white via-blue-50 to-purple-100 text-gray-800">
       {/* Navigation */}
       <header className="sticky top-0 bg-white shadow z-50">
         <nav className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
@@ -35,7 +36,7 @@ export default function TrainingPage() {
       </section> */}
 
       {/* Core Services */}
-      <main className="p-6 max-w-6xl mx-auto bg-gradient-to-br from-white via-blue-50 to-purple-100 min-h-screen">
+      <main className="p-6 max-w-6xl mx-auto min-h-screen">
         <section id="services" className="py-10 scroll-mt-20">
         <div className="mb-6">
           <Link
@@ -176,6 +177,7 @@ export default function TrainingPage() {
           &copy; {new Date().getFullYear()} Ediga Technology Solutions LLC. All rights reserved.
         </footer>
       </main>
+      </div>
     </>
   );
 }

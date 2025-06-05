@@ -3,6 +3,8 @@ import Logo from './logo.png';
 export default function FreelancingPage() {
   return (
     <>
+    <div className="min-h-screen bg-gradient-to-br from-white via-blue-50 to-purple-100 text-gray-800">
+      {/* header */}
       <header className="sticky top-0 bg-white shadow z-50">
         <nav className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
           <div className="flex items-center space-x-2">
@@ -11,12 +13,17 @@ export default function FreelancingPage() {
           </div>
           </nav>
       </header>
-    <div className="min-h-screen bg-gradient-to-br from-white via-blue-50 to-purple-100 min-h-screen">
+      {/* header */}
+
+    <main className="max-w-6xl mx-auto p-6 min-h-screen">
       <div className="max-w-4xl mx-auto">
         <div className="mb-6">
-          <Link to="/" className="text-sm text-indigo-600 hover:text-indigo-800 transition font-medium">
+            <Link
+            to="/"
+            className="text-sm text-indigo-600 hover:text-indigo-800 transition font-medium"
+            >
             ← Back to Home
-          </Link>
+            </Link>
         </div>
         <h1 className="text-4xl font-bold text-orange-700 mb-6">Freelancing Services</h1>
         <p className="text-gray-700 mb-4">
@@ -43,6 +50,7 @@ export default function FreelancingPage() {
           Contact for Freelance Work
         </a>
       </div>
+    </main>
     </div>
     </>
   );

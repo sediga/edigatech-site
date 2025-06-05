@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 export default function RecruiterPage() {
   return (
     <>
+    <div className="min-h-screen bg-gradient-to-br from-white via-blue-50 to-purple-100 text-gray-800">
       {/* header */}
       <header className="sticky top-0 bg-white shadow z-50">
         <nav className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
@@ -17,7 +18,7 @@ export default function RecruiterPage() {
 
       {/* header */}
 
-    <main className="max-w-6xl mx-auto p-6 bg-gradient-to-br from-white via-blue-50 to-purple-100 min-h-screen">
+    <main className="max-w-6xl mx-auto p-6 min-h-screen">
 
       {/* Back Link */}
       <div className="mb-6">
@@ -92,6 +93,7 @@ export default function RecruiterPage() {
         &copy; {new Date().getFullYear()} Ediga Technology Solutions LLC. All rights reserved.
       </footer>
     </main>
+    </div>
     </>
   );
 }
