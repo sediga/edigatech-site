@@ -1,6 +1,7 @@
 import Logo from './logo.png';
 import CalendlyButton from './components/CalendlyButton';
 import ContactForm from './components/ContactForm';
+import { Link } from 'react-router-dom';
 
 export default function TrainingPage() {
   return (
@@ -18,7 +19,14 @@ export default function TrainingPage() {
             <li><a href="#book" className="hover:text-indigo-600">Book Call</a></li>
             <li><a href="#resume" className="hover:text-indigo-600">Upload Resume</a></li>
             <li><a href="#contact" className="hover:text-indigo-600">Contact</a></li>
-            <li><a href="/recruiters" className="hover:text-green-600">For Recruiters</a></li>
+            <li>      
+                <Link
+                  to="/"
+                  className="text-sm text-indigo-600 hover:text-indigo-800 transition font-medium"
+                >
+                  ← Back to Home
+                </Link>
+            </li>
         </ul>
         </nav>
       </header>
