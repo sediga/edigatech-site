@@ -31,8 +31,8 @@ export default function RecruiterPage() {
 
       {/* Headline & Value Prop */}
       <section className="text-center py-10">
-        <h1 className="text-5xl font-extrabold text-indigo-800 mb-4">Hire Proven Developers, Faster.</h1>
-        <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+        <h1 className="text-4xl font-extrabold text-indigo-800 mb-4">Hire Proven Developers, Faster.</h1>
+        <p className="text-gray-700 max-w-3xl mx-auto">
           We connect you with vetted, job-ready developers trained by industry experts — no upfront cost.
         </p>
       </section>

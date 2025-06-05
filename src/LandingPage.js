@@ -18,8 +18,8 @@ export default function LandingPage() {
       </header>
 
       {/* Mission Statement */}
-      <section className="bg-indigo-50 text-center py-12 px-6 shadow-inner rounded-xl mx-6 mt-6">
-        <h1 className="text-4xl font-extrabold mb-4 text-indigo-800">Mission Statement</h1>
+      <section className="text-center py-16 px-4">
+        <h1 className="text-3xl font-extrabold mb-4 text-indigo-800">Mission Statement</h1>
         <p className="max-w-3xl mx-auto text-lg text-gray-700">
           At Ediga Technology Solutions, our mission is to empower individuals and teams to thrive in the tech industry.
 
