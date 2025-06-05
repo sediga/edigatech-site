@@ -14,7 +14,6 @@ export default function TrainingPage() {
             <span className="text-xl font-bold text-indigo-700">Ediga Technology Solutions</span>
           </div>
           <ul className="flex space-x-6 text-sm font-medium text-gray-700">
-            <li><a href="#mission" className="hover:text-indigo-600">Mission</a></li>
             <li><a href="#services" className="hover:text-indigo-600">Services</a></li>
             <li><a href="#book" className="hover:text-indigo-600">Book Call</a></li>
             <li><a href="#resume" className="hover:text-indigo-600">Upload Resume</a></li>
