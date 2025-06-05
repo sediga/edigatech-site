@@ -20,10 +20,7 @@ export default function TrainingPage() {
             <li><a href="#resume" className="hover:text-indigo-600">Upload Resume</a></li>
             <li><a href="#contact" className="hover:text-indigo-600">Contact</a></li>
             <li>      
-                <Link
-                  to="/"
-                  className="text-sm text-indigo-600 hover:text-indigo-800 transition font-medium"
-                >
+                <Link to="/" className="text-sm text-indigo-600 hover:text-indigo-800 transition font-medium">
                   ← Back to Home
                 </Link>
             </li>
@@ -32,7 +29,7 @@ export default function TrainingPage() {
       </header>
 
       {/* Mission */}
-      <section id="mission" className="bg-indigo-50 py-10 text-center px-6">
+      {/* <section id="mission" className="bg-indigo-50 py-10 text-center px-6">
         <h1 className="text-4xl font-extrabold text-indigo-800 mb-4">Mission Statement</h1>
         <p className="text-lg text-gray-700 max-w-3xl mx-auto">
           At Ediga Technology Solutions, our mission is to empower individuals to land meaningful tech careers.
@@ -40,7 +37,7 @@ export default function TrainingPage() {
           We only win when you win. Whether you're a fresh graduate or switching fields, we're here to guide
           you with heart and hustle.
         </p>
-      </section>
+      </section> */}
 
       {/* Core Services */}
       <main className="p-6 max-w-6xl mx-auto bg-gradient-to-br from-white via-blue-50 to-purple-100 min-h-screen">
