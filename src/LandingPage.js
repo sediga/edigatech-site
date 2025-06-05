@@ -8,9 +8,13 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-white via-blue-50 to-purple-100 text-gray-800">
       {/* Header with logo and name */}
-      <header className="flex items-center p-4">
-        <img src={Logo} alt="Logo" className="w-10 h-10 mr-3" />
-        <span className="text-2xl font-bold text-indigo-700">Ediga Technology Solutions</span>
+      <header className="sticky top-0 bg-white shadow z-50">
+        <nav className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+          <div className="flex items-center space-x-2">
+            <img src={Logo} alt="Logo" className="w-10 h-10" />
+            <span className="text-xl font-bold text-indigo-700">Ediga Technology Solutions</span>
+          </div>
+          </nav>
       </header>
 
       {/* Mission Statement */}
