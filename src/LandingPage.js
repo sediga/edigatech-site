@@ -7,7 +7,7 @@ export default function LandingPage() {
 
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800">
-      {/* Header with logo and name */}
+      {/* Header */}
       <header className="sticky top-0 bg-white shadow z-50">
         <nav className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
           <div className="flex items-center space-x-2">
@@ -17,54 +17,80 @@ export default function LandingPage() {
         </nav>
       </header>
 
-      {/* Mission Statement */}
-      <section className="text-center py-16 px-4 bg-indigo-50">
-        <h1 className="text-3xl font-semibold mb-4 text-indigo-800">Mission Statement</h1>
-        <p className="max-w-3xl mx-auto text-lg text-gray-700">
-          At Ediga Technology Solutions, our mission is to empower individuals and teams to thrive in the tech industry.
-          We offer personalized training and mentorship for aspiring developers, recruiting and hiring support for
-          companies seeking top talent, and freelance consulting to deliver high-impact software solutions.
+      {/* Hero Section */}
+      <section className="text-center py-20 px-4 bg-indigo-50">
+        <h1 className="text-4xl font-bold text-indigo-800 mb-4">
+          Tech & Automation for Healthcare Startups
+        </h1>
+        <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+          We help healthcare startups automate workflows, modernize legacy systems, and scale confidently with tailored consulting and technical expertise.
         </p>
       </section>
 
-      {/* Core Services */}
+      {/* Expanded Core Services */}
       <section className="text-center py-16 px-4">
-        <h2 className="text-3xl font-semibold text-indigo-700 mb-10">Core Services</h2>
+        <h2 className="text-3xl font-semibold text-indigo-700 mb-10">What We Offer</h2>
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {/* Coaching */}
+          {/* Flowtra Product */}
           <div
-            onClick={() => navigate('/training')}
-            className="cursor-pointer border-t-4 border-indigo-600 bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition"
+            onClick={() => navigate('/products')}
+            className="cursor-pointer border-t-4 border-indigo-600 bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition flex flex-col justify-between"
           >
-            <h3 className="text-xl font-bold mb-2 text-indigo-700">Developer Coaching & Training</h3>
-            <p className="text-gray-700">
-              Hands-on mentorship in .NET, cloud, and clean architecture. Ideal for junior to mid-level developers.
-            </p>
+            <div>
+              <h3 className="text-xl font-bold mb-2 text-indigo-700">Flowtra Automation Platform</h3>
+              <p className="text-gray-700 mb-4">
+                Flowtra is our no-code platform for building reliable browser automations — ideal for credentialing, RCM, data scraping, or any repetitive web task.
+              </p>
+              <p className="text-gray-700">
+                Use it to eliminate manual data entry, reduce operational costs, and empower your non-technical staff with powerful automation.
+              </p>
+            </div>
+            <button className="mt-6 text-blue-600 underline">Explore Flowtra &rarr;</button>
           </div>
 
-          {/* Recruiter */}
+          {/* Consulting Services */}
+          <div
+            onClick={() => navigate('/consulting')}
+            className="cursor-pointer border-t-4 border-rose-600 bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition flex flex-col justify-between"
+          >
+            <div>
+              <h3 className="text-xl font-bold mb-2 text-rose-700">Consulting Services</h3>
+              <p className="text-gray-700 mb-4">
+                We provide hands-on engineering leadership and implementation support for startups. Whether you’re modernizing a legacy .NET system or building HIPAA-compliant cloud automation, we can help.
+              </p>
+              <p className="text-gray-700">
+                We also offer white-glove support for building custom Flowtra bots and flows tailored to your internal workflows.
+              </p>
+            </div>
+            <button className="mt-6 text-blue-600 underline">View Consulting Services &rarr;</button>
+          </div>
+
+          {/* Technical Hiring */}
           <div
             onClick={() => navigate('/recruiters')}
-            className="cursor-pointer border-t-4 border-rose-600 bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition"
+            className="cursor-pointer border-t-4 border-indigo-400 bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition flex flex-col justify-between"
           >
-            <h3 className="text-xl font-bold mb-2 text-rose-700">Recruiter & Hiring Solutions</h3>
-            <p className="text-gray-700">
-              Find vetted, interview-ready developers for your roles. Technical screening and onboarding support included.
-            </p>
-          </div>
-
-          {/* Freelance */}
-          <div
-            onClick={() => navigate('/freelancing')}
-            className="cursor-pointer border-t-4 border-indigo-400 bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition"
-          >
-            <h3 className="text-xl font-bold mb-2 text-indigo-600">Freelance Services</h3>
-            <p className="text-gray-700">
-              Hire us for .NET modernization, cloud projects, and automation expertise — on your terms.
-            </p>
+            <div>
+              <h3 className="text-xl font-bold mb-2 text-indigo-600">Technical Hiring & Screening</h3>
+              <p className="text-gray-700 mb-4">
+                We support hiring managers and recruiters by screening candidates for real-world tech readiness. Our vetting focuses on system design, automation, cloud, and healthcare-specific workflows.
+              </p>
+              <p className="text-gray-700">
+                Whether you're hiring for a startup or scaling an engineering team, we help you save time and reduce hiring risks.
+              </p>
+            </div>
+            <button className="mt-6 text-blue-600 underline">Recruit With Us &rarr;</button>
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="bg-blue-600 text-white py-6 text-center">
+        <p>&copy; {new Date().getFullYear()} Ediga Technology Solutions LLC. All rights reserved.</p>
+        <p className="mt-1 text-sm">
+          <a href="/privacy" className="underline">Privacy Policy</a>
+        </p>
+      </footer>
     </div>
   );
 }
