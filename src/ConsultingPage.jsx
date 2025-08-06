@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Logo from './logo.png';
 import CalendlyButton from './components/CalendlyButton';
+import { PopupButton } from 'react-calendly';
 
 export default function ConsultingPage() {
   const navigate = useNavigate();
@@ -83,14 +84,22 @@ export default function ConsultingPage() {
 
 
       {/* CTA */}
-<section className="bg-white py-20 px-6 text-center">
-  <h2 className="text-2xl font-semibold text-indigo-800 mb-4">
+<section className="bg-white py-20 px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32 text-center">
+  <h2 className="text-2xl sm:text-3xl font-semibold text-indigo-800 mb-4">
     Let's Build Something Great Together
   </h2>
   <p className="text-gray-700 text-lg mb-6 max-w-2xl mx-auto">
     Whether you're scaling a product, modernizing old systems, or exploring automation — we’re ready to jump in and help. Start with a free discovery call.
   </p>
-              <CalendlyButton />
+
+  <div className="flex justify-center">
+    <PopupButton
+      url="https://calendly.com/sreenivasa-edigatech/30min?primary_color=4f46e5"
+      rootElement={document.getElementById('__next') || document.body}
+      text="Book a Free Discovery Call"
+      className="bg-indigo-600 text-white px-6 py-3 rounded-md hover:bg-indigo-700 transition duration-300"
+    />
+  </div>
 </section>
 
 

@@ -86,15 +86,18 @@ export default function RecruitersPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 px-6 text-center">
-        <h2 className="text-3xl font-semibold text-indigo-700 mb-4">Need Developer Help Now?</h2>
-        <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
-          Reach out to share your hiring needs — and get a technical partner who can help you find, vet, and grow your engineering team.
-        </p>
-        <div className="px-56 py-3 rounded">
-          <ContactForm/>
-          </div>
-      </section>
+<section className="py-16 px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32 text-center">
+  <h2 className="text-3xl font-semibold text-indigo-700 mb-4">
+    Need Developer Help Now?
+  </h2>
+  <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
+    Reach out to share your hiring needs — and get a technical partner who can help you find, vet, and grow your engineering team.
+  </p>
+  <div className="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <ContactForm />
+  </div>
+</section>
+
 
       {/* Footer */}
       <footer className="bg-blue-600 text-white py-6 text-center">
