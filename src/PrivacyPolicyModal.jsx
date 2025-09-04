@@ -55,7 +55,7 @@ export default function PrivacyPolicyModal({ open, onClose }) {
 
           <h3 className="mt-5 font-semibold text-gray-900">Information We Collect</h3>
           <ul className="list-disc ml-5 mt-2">
-            <li><strong>Account & contact info</strong> (name, email, company, role).</li>
+            <li><strong>Account & contact info</strong> (email).</li>
             <li><strong>Usage data</strong> (app activity, logs, device/browser, cookies).</li>
             <li><strong>Support communications</strong> (messages, attachments, metadata).</li>
             <li><strong>Customer input data</strong> you choose to process via Flowtra (e.g., CSV rows used to auto-fill forms). You control what you upload.</li>
@@ -64,7 +64,7 @@ export default function PrivacyPolicyModal({ open, onClose }) {
           <h3 className="mt-5 font-semibold text-gray-900">How We Use Information</h3>
           <ul className="list-disc ml-5 mt-2">
             <li>Provide, maintain, and improve the Services.</li>
-            <li>Operate features like data loops, replays, and reliability analytics.</li>
+            <li>Operate features like replay flows, and reliability analytics.</li>
             <li>Communicate with you about updates, security, and support.</li>
             <li>Detect, prevent, and investigate fraud, abuse, or security incidents.</li>
             <li>Comply with legal obligations and enforce agreements.</li>
@@ -117,7 +117,7 @@ export default function PrivacyPolicyModal({ open, onClose }) {
           <p className="mt-2">
             Depending on your location, you may have rights to access, correct, delete, or
             port your personal data, object to or restrict processing, and withdraw consent.
-            To exercise these rights, contact us at <a className="underline" href="mailto:privacy@edigatech.com">privacy@edigatech.com</a>.
+            To exercise these rights, contact us at <a className="underline" href="mailto:support@edigatech.com">support@edigatech.com</a>.
           </p>
 
           <h3 className="mt-5 font-semibold text-gray-900">Cookies & Tracking</h3>
@@ -141,7 +141,7 @@ export default function PrivacyPolicyModal({ open, onClose }) {
           <h3 className="mt-5 font-semibold text-gray-900">Contact Us</h3>
           <p className="mt-2">
             Ediga Technology Solutions LLC<br />
-            Email: <a className="underline" href="mailto:privacy@edigatech.com">privacy@edigatech.com</a>
+            Email: <a className="underline" href="mailto:support@edigatech.com">support@edigatech.com</a>
           </p>
 
           <p className="mt-6 text-xs text-gray-500">
