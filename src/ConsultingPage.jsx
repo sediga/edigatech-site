@@ -1,27 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Logo from './logo.png';
+import Logo from './logo.svg';
 import CalendlyButton from './components/CalendlyButton';
 import { PopupButton } from 'react-calendly';
+import PrivacyPolicyModal from './PrivacyPolicyModal';
 
 export default function ConsultingPage() {
   const navigate = useNavigate();
-
+  const [showPrivacy, setShowPrivacy] = useState(false);
+  
   return (
     <div className="min-h-screen bg-white text-gray-800">
-      {/* Header */}
-      <header className="sticky top-0 bg-white shadow z-50">
-        <nav className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-          <div className="flex items-center space-x-2 cursor-pointer" onClick={() => navigate("/")}>
-            <img src={Logo} alt="Logo" className="w-10 h-10" />
-            <span className="text-xl font-bold text-indigo-700">Ediga Technology Solutions</span>
-          </div>
-          <div className="space-x-4 text-sm font-medium text-indigo-700">
-            <button onClick={() => navigate('/')} className="hover:underline">Back</button>
-          </div>
-        </nav>
-      </header>
-
       {/* Hero Section */}
       <section className="py-20 px-6 bg-indigo-50 text-center">
         <h1 className="text-4xl font-bold text-indigo-800 mb-4">Consulting for Healthcare Startups</h1>
@@ -103,10 +92,6 @@ export default function ConsultingPage() {
 </section>
 
 
-      {/* Footer */}
-      <footer className="bg-blue-600 text-white py-6 text-center">
-        <p>&copy; {new Date().getFullYear()} Ediga Technology Solutions LLC. All rights reserved.</p>
-      </footer>
     </div>
   );
 }
