@@ -15,13 +15,6 @@ export default function RecruitersPage() {
           Need reliable developers but tired of long interviews and bad hires? We help you
           screen, shortlist, and onboard faster — with deep technical reviews and zero fluff.
         </p>
-
-        {/* Optional helper link */}
-        <div className="mt-6">
-          <Link to="/" className="text-sm text-indigo-700 underline">
-            ← Back to Home
-          </Link>
-        </div>
       </section>
 
       {/* Highlights */}

@@ -16,13 +16,6 @@ export default function ProductsPage() {
           Flowtra helps you record and replay flows — without deep technical setup.
           We&apos;re actively evolving the platform based on real-world feedback.
         </p>
-
-        {/* Optional helper link */}
-        <div className="mt-6">
-          <Link to="/" className="text-sm text-indigo-700 underline">
-            ← Back to Home
-          </Link>
-        </div>
       </section>
 
       {/* Features */}
