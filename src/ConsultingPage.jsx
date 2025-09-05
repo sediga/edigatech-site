@@ -117,13 +117,6 @@ export default function ConsultingPage() {
               text="Book a Free Discovery Call"
               className="bg-indigo-600 text-white px-6 py-3 rounded-md hover:bg-indigo-700 transition"
             />
-            <button
-              type="button"
-              onClick={() => setShowPrivacy(true)}
-              className="text-sm text-gray-600 underline underline-offset-2 hover:text-gray-800"
-            >
-              Privacy Policy
-            </button>
           </div>
         </div>
       </section>
