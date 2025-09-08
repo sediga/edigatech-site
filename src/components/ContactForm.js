@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 export default function ContactForm() {
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [formData, setFormData] = useState({ name: '', email: '', feedback: '' });
   const [status, setStatus] = useState(null);
 
   const handleChange = (e) => {
@@ -13,15 +13,18 @@ export default function ContactForm() {
     setStatus('submitting');
 
     try {
-      const response = await fetch('https://formspree.io/f/manjwnbe', {
+      const response = await fetch('https://api.flowtra.app/api/feedback', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 
+          'Content-Type': 'application/json',
+          "x-api-key": 'u42Q7gXgVx8fN1rLk9eJ0cGm5wYzA2dR'
+         },
         body: JSON.stringify(formData),
       });
 
       if (response.ok) {
         setStatus('success');
-        setFormData({ name: '', email: '', message: '' });
+        setFormData({ name: '', email: '', feedback: '' });
       } else {
         setStatus('error');
       }
@@ -61,9 +64,9 @@ export default function ContactForm() {
       <div>
         <label className="block text-sm font-medium text-gray-700">Message</label>
         <textarea
-          name="message"
+          name="feedback"
           rows="4"
-          value={formData.message}
+          value={formData.feedback}
           onChange={handleChange}
           required
           className="w-full p-2 border border-gray-300 rounded-lg"
